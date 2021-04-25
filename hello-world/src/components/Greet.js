@@ -1,3 +1,3 @@
 import React from 'react';
-const Greet = ()=> <h1>Hello There</h1>
+const Greet = ()=> <h1>Hello From function</h1>
 export default Greet;
