@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo.svg'
 import Greet from './components/Greet.js'
 import './App.css';
 
