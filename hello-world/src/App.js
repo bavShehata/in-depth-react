@@ -6,6 +6,7 @@ import Message from "./components/Message.js";
 import Counter from "./components/Counter.js";
 import FunctionClick from "./components/FunctionClick.js";
 import ClassClick from "./components/ClassClick.js";
+import EventBind from "./components/EventBind.js";
 import "./App.css";
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
       {/* <Welcome name="Jim" /> */}
       {/* <Hello /> */}
       {/* <Message /> */}
-      <Counter />
-      <FunctionClick />
-      <ClassClick />
+      {/* <Counter /> */}
+      {/* <FunctionClick /> */}
+      {/* <ClassClick /> */}
+      <EventBind />
     </div>
   );
 }
