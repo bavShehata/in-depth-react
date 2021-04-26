@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-class Welcome extends Component{
-    render(){
-        return <h1>Hello from a class</h1>;
-    }
+class Welcome extends Component {
+  render() {
+    return <h1>Hello {this.props.name} from a class</h1>;
+  }
 }
 
 export default Welcome;
