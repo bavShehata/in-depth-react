@@ -1,3 +1,4 @@
+import "./App.css";
 import logo from "./logo.svg";
 import Greet from "./components/Greet.js";
 import Welcome from "./components/Welcome.js";
@@ -9,8 +10,11 @@ import ClassClick from "./components/ClassClick.js";
 import EventBind from "./components/EventBind.js";
 import ParentComponent from "./components/ParentComponent.js";
 import UserGreeting from "./components/UserGreeting.js";
-import "./App.css";
 import NameList from "./components/NameList";
+import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 function App() {
   return (
@@ -26,8 +30,12 @@ function App() {
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
       {/* <ParentComponent /> */}
-      <UserGreeting />
-      <NameList />
+      {/* <UserGreeting /> */}
+      {/* <NameList /> */}
+      <Stylesheet primary={true} />
+      <Inline />
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
     </div>
   );
 }
