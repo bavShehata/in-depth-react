@@ -4,8 +4,8 @@ function NameList() {
   const names = ["Bavly", "Drake", "Jade"];
   return (
     <div>
-      {names.map((name) => (
-        <h2 key={name}>{name}</h2>
+      {names.map((name, i) => (
+        <h2 key={i}>{name}</h2>
       ))}
     </div>
   );
