@@ -16,11 +16,13 @@ import Inline from "./components/Inline";
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifeCycleA />
+      {/* <Form /> */}
       {/* <Greet name="Bavly">
         <p>I am a child</p>
       </Greet> */}
