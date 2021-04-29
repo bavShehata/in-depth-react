@@ -17,11 +17,26 @@ export class LifeCycleA extends Component {
   componentDidMount() {
     console.log("Cycle A did mount");
   }
+
+  shouldComponentUpdate() {
+    console.log("Cycle A should update");
+    return true;
+  }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("Cycle A get snapshot");
+    return null;
+  }
+  componentDidUpdate() {
+    console.log("Cycle A component update");
+  }
+  changeState = () => {
+    this.setState({ name: "Bova" });
+  };
   render() {
     console.log("Cycle A Render");
     return (
       <div>
-        Cycle A
+        Cycle A<button onClick={this.changeState}>Change state</button>
         <LifeCycleB />
       </div>
     );
