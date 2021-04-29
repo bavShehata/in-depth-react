@@ -19,12 +19,15 @@ import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
+import { PureComp } from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
     <div className="App">
+      <ParentComp />
       {/* <FragmentDemo /> */}
-      <Table />
+      {/* <Table /> */}
       {/* <LifeCycleA /> */}
       {/* <Form /> */}
       {/* <Greet name="Bavly">
