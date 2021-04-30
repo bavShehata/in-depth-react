@@ -1,4 +1,5 @@
 import "./App.css";
+import "./appStyles.css";
 import logo from "./logo.svg";
 import Greet from "./components/Greet.js";
 import Welcome from "./components/Welcome.js";
@@ -13,7 +14,6 @@ import UserGreeting from "./components/UserGreeting.js";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/Inline";
-import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
@@ -25,11 +25,13 @@ import RefsDemo from "./components/RefsDemo";
 import Input from "./components/Input";
 import FocusInput from "./components/FocusInput";
 import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
     <div className="App">
-      <FRParentInput />
+      <PortalDemo />
+      {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
