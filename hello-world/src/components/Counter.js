@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Counter extends Component {
+export class Counter extends Component {
   constructor(props) {
     super(props);
 
@@ -8,27 +8,16 @@ class Counter extends Component {
       count: 0,
     };
   }
-
-  increment() {
+  incCount = () => {
     // this.setState({ count: this.state.count + 1 });
-    this.setState((prevState, props) => ({
-      count: prevState.count + 1,
-    }));
-  }
-  incrementFive() {
-    this.increment();
-    this.increment();
-    this.increment();
-    this.increment();
-    this.increment();
-  }
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1,
+      };
+    });
+  };
   render() {
-    return (
-      <div>
-        <button onClick={() => this.incrementFive()}>Add counter</button>
-        The count is at {this.state.count}
-      </div>
-    );
+    return <div>{this.props.render(this.state.count, this.incCount)}</div>;
   }
 }
 
