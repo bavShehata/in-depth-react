@@ -33,11 +33,17 @@ import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/UserContext";
 
 function App() {
   return (
     <div className="App">
-      <Counter
+      <UserProvider value="Bavly">
+        <ComponentC />
+      </UserProvider>
+
+      {/* <Counter
         render={(count, incCount) => (
           <>
             <HoverCounterTwo count={count} incCount={incCount} />
@@ -50,7 +56,7 @@ function App() {
             <ClickCounterTwo count={count} incCount={incCount} />
           </>
         )}
-      />
+      /> */}
 
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
