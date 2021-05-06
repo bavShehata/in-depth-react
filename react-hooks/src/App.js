@@ -33,13 +33,15 @@
 import "./App.css";
 import React, { useReducer } from "react";
 import UseStateDataFetching from "./components/UseStateDataFetching";
+import UseReducerDataFetching from "./components/UseReducerDataFetching";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
-      <UseStateDataFetching />
+      <UseReducerDataFetching />
+      {/* <UseStateDataFetching /> */}
       {/* <p>{count}</p>
       <CounterContext.Provider value={{ count, dispatch }}>
         <ComponentA />
