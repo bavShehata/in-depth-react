@@ -41,14 +41,18 @@ import ClassTimer from "./components/ClassTimer";
 import HookTimer from "./components/HookTimer";
 import DocTitleOne from "./components/DocTitleOne";
 import DocTitleTwo from "./components/DocTitleTwo";
+import CounterHookOne from "./components/CounterHookOne";
+import CounterHookTwo from "./components/CounterHookTwo";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
-      <DocTitleTwo />
-      <DocTitleOne />
+      <CounterHookOne />
+      <CounterHookTwo />
+      {/* <DocTitleTwo /> */}
+      {/* <DocTitleOne /> */}
       {/* <HookTimer /> */}
       {/* <ClassTimer /> */}
       {/* <FocusInput /> */}
