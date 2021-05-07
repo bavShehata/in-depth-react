@@ -35,13 +35,15 @@ import React, { useReducer } from "react";
 import UseStateDataFetching from "./components/UseStateDataFetching";
 import UseReducerDataFetching from "./components/UseReducerDataFetching";
 import ParentComponent from "./components/ParentComponent";
+import Counter from "./components/Counter";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
-      <ParentComponent />
+      <Counter />
+      {/* <ParentComponent /> */}
       {/* <UseReducerDataFetching /> */}
       {/* <UseStateDataFetching /> */}
       {/* <p>{count}</p>
