@@ -43,14 +43,16 @@ import DocTitleOne from "./components/DocTitleOne";
 import DocTitleTwo from "./components/DocTitleTwo";
 import CounterHookOne from "./components/CounterHookOne";
 import CounterHookTwo from "./components/CounterHookTwo";
+import UserForm from "./components/UserForm";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
-      <CounterHookOne />
-      <CounterHookTwo />
+      <UserForm />
+      {/* <CounterHookOne /> */}
+      {/* <CounterHookTwo /> */}
       {/* <DocTitleTwo /> */}
       {/* <DocTitleOne /> */}
       {/* <HookTimer /> */}
